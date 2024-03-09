@@ -1,4 +1,4 @@
-package com.febatis.googlekeepdosguri
+package com.febatis.googlekeepdosguri.domain.listnote
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,4 +1,4 @@
-package com.febatis.googlekeepdosguri
+package com.febatis.googlekeepdosguri.domain.listnote
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
