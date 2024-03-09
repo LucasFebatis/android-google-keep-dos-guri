@@ -1,12 +1,13 @@
-package com.febatis.googlekeepdosguri.domain.listnote
+package com.febatis.googlekeepdosguri.domain.listnote.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.febatis.googlekeepdosguri.databinding.ItemNoteBinding
+import com.febatis.googlekeepdosguri.domain.listnote.model.Note
 
 
-class NoteAdapter(private val dataSet: Array<String>) :
+class NoteAdapter(private val dataSet: List<Note>) :
     RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root)
@@ -19,8 +20,8 @@ class NoteAdapter(private val dataSet: Array<String>) :
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.binding.tvTitle.text = dataSet[position]
-        viewHolder.binding.tvContent.text = dataSet[position]
+        viewHolder.binding.tvTitle.text = dataSet[position].title
+        viewHolder.binding.tvContent.text = dataSet[position].content
     }
 
     override fun getItemCount() = dataSet.size
