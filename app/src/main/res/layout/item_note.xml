@@ -12,14 +12,17 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
             style="@style/TextAppearance.Material3.TitleMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Header" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLines="2"
             tools:text="Subhead" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
